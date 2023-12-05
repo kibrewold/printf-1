@@ -5,7 +5,7 @@
  * @l: va_list of arguments from _printf
  * @f: pointer to the struct flags determining
  * if a flag is passed to _printf
- * Return: number of char printed
+ * Return: the number of char printed
  */
 int print_int(va_list l, flags_t *f)
 {
@@ -66,8 +66,9 @@ void print_number(int n)
  * @i: integer to evaluate
  * Return: number of digits
  */
-int count_digit(int i)
+int count_digit(int)
 {
+	int i;
 	unsigned int d = 0;
 	unsigned int u;
 
