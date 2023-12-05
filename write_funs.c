@@ -12,17 +12,17 @@
 int _putchar(char c)
 {
 	static char buf[1024];
-	static int i;
+	static int j;
 
-	if (c == -1 || i >= 1024)
+	if (c == -1 || j >= 1024)
 	{
-		write(1, &buf, i);
-		i = 0;
+		write(1, &buf, j);
+		j = 0;
 	}
 	if (c != -1)
 	{
-		buf[i] = c;
-		i++;
+		buf[j] = c;
+		j++;
 	}
 	return (1);
 }
